@@ -47,7 +47,7 @@ llm = HuggingFaceLLM(
     query_wrapper_prompt=query_wrapper_prompt,
     tokenizer_name="meta-llama/Llama-2-7b-chat-hf",
     model_name="meta-llama/Llama-2-7b-chat-hf",
-    device_map="cpu",
+    device_map="auto",
     model_kwargs={  "torch_dtype": torch.float16,  "quantization_config": quantization_config}
 )
 
